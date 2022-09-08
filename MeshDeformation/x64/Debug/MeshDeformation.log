@@ -1,0 +1,58 @@
+﻿  stdafx.cpp
+  Hole.cpp
+  MeshFillHole.cpp
+  MeshDegeneratedTriangles.cpp
+  MeshIsland.cpp
+C:\Users\user\Downloads\PoissonDeformation-master_0908\MeshDeformation\fillingHole\MeshIsland.cpp(223,14): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+  MeshSpike.cpp
+C:\Users\user\Downloads\PoissonDeformation-master_0908\MeshDeformation\fillingHole\MeshSpike.cpp(187,110): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+C:\Users\user\Downloads\PoissonDeformation-master_0908\MeshDeformation\fillingHole\MeshSpike.cpp(190,98): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+C:\Users\user\Downloads\PoissonDeformation-master_0908\MeshDeformation\fillingHole\MeshSpike.cpp(194,77): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+  PoissonDeform.cpp
+  MeshDeformation.cpp
+  MeshDeformationDoc.cpp
+  Deformation.cpp
+  ControlVertex.cpp
+  PoissonDeformation.cpp
+  MyTriMesh.cpp
+  math3d.cpp
+  MyMeshPick.cpp
+  Selection.cpp
+  ArcBall.cpp
+  MainFrm.cpp
+  MeshDeformationView.cpp
+  MyArcBall.cpp
+  MyLeftPane.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  PoissonDefDlg.cpp
+  UIControl.cpp
+  CP_PointVector.cpp
+  MeshLaplacianSolver.cpp
+  MyAfxFunction.cpp
+  quaternion.cpp
+  SimpleCompute.cpp
+  코드를 생성하고 있습니다...
+OpenMeshCored.lib(BinaryHelper.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(BinaryHelper.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(IOManager.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(IOManager.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(OMFormat.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(OMFormat.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(BaseReader.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(BaseReader.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(OBJReader.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(OBJReader.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(OFFReader.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(OFFReader.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(OMReader.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(OMReader.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(PLYReader.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(PLYReader.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(STLReader.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(STLReader.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(BaseWriter.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(BaseWriter.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(OBJWriter.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(OBJWriter.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(OFFWriter.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(OFFWriter.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(OMWriter.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(OMWriter.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(PLYWriter.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(PLYWriter.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(STLWriter.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(STLWriter.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(VTKWriter.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(VTKWriter.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(ArrayKernel.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(ArrayKernel.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(PolyConnectivity.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(PolyConnectivity.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(TriConnectivity.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(TriConnectivity.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(omstream.obj) : warning LNK4099: '' PDB를 'OpenMeshCored.lib(omstream.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(BaseProperty.obj) : warning LNK4099: '' PDB를 'OpenMeshCored.lib(BaseProperty.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+OpenMeshCored.lib(Endian.obj) : warning LNK4099: 'OpenMeshCore.pdb' PDB를 'OpenMeshCored.lib(Endian.obj)' 또는 'C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\OpenMeshCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+  MeshDeformation.vcxproj -> C:\Users\user\Downloads\PoissonDeformation-master_0908\x64\Debug\PoissonDef.exe

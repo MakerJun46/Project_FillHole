@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32B17AD0-A0A6-4824-8E1E-AEDF058BE6B9}</ProjectGuid>
+    <RootNamespace>MeshDeformation</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>PoissonDef</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\libs\OpenMesh3.0\include;..\libs;..\libs\opengllib;..\libs\Eigen;$(SolutionDir)libs\quadrics_src;$(SolutionDir)libs\quadrics_include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\libs\OpenMesh3.0\lib;..\libs\opengllib;..\quadrics_debug;..\quadrics_lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\libs\OpenMesh3.0\include;..\libs\opengllib;$(SolutionDir)libs;..\libs\Eigen;$(SolutionDir)libs\quadrics_src;$(SolutionDir)libs\quadrics_include;$(SolutionDir)libs\fillingHole;$(IncludePath)</IncludePath>
+    <LibraryPath>..\libs\OpenMesh3.0\lib;..\libs\opengllib;..\Debug;$(SolutionDir)libs\quadrics_debug;$(SolutionDir)libs\quadric_lib\CLAPACK\lib\;$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>$(SolutionDir)libs;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\libs\OpenMesh3.0\include;..\libs;..\libs\opengllib;..\libs\Eigen;$(IncludePath)</IncludePath>
+    <LibraryPath>..\libs\OpenMesh3.0\lib;..\libs\opengllib;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)libs\fillingHole;$(SolutionDir)libs\opengllib;$(SolutionDir)libs;$(SolutionDir)libs\OpenMesh3.0\include;$(SolutionDir)libs\Eigen;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)libs\quadric_lib\CLAPACK\lib\;$(SolutionDir)libs\opengllib;$(SolutionDir)libsOpenMesh3.0\lib;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)libs\quadrics_src;$(SolutionDir)libs\quadrics_include;..\libs\quadrics_src;..\libs\quadrics_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Deformd.lib;Cored.lib;Utilityd.lib;ThirdPartyLibsd.lib;OpenMeshCored.lib;OpenMeshToolsd.lib;OpenMeshCore.lib;OpenMeshTools.lib;glut32.lib;allquadricsdirect.lib;blas.lib;blasd.lib;lapack.lib;lapackd.lib;libf2c.lib;libf2cd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\PoissonDeformation-master_0830\libs\OpenMesh8.1\OpenMesh;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/Ylsymbol %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenMeshCored.lib;OpenMeshToolsd.lib;glut64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <StackCommitSize>100000000</StackCommitSize>
+      <HeapReserveSize>
+      </HeapReserveSize>
+      <StackReserveSize>100000000</StackReserveSize>
+      <AdditionalLibraryDirectories>$(SolutionDir)\libs\quadrics_lib\CLAPACK\lib;$(SolutionDir)\libs\quadrics_debug;$(SolutionDir)\libs\OpenMeshlib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>../Deform/;E:\ARAPSM\SimpleFrame;D:\programing software\MATLAB2013a\extern\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Deform.lib;Core.lib;Utility.lib;ThirdPartyLibs.lib;OpenMeshCore.lib;OpenMeshTools.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OpenMeshCored.lib;OpenMeshToolsd.lib;glut64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <StackReserveSize>80000000</StackReserveSize>
+      <StackCommitSize>80000000</StackCommitSize>
+      <AdditionalLibraryDirectories>$(SolutionDir)\libs\quadrics_lib\CLAPACK\lib;$(SolutionDir)\libs\quadrics_debug;$(SolutionDir)\libs\OpenMeshlib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="res\buttons.bmp" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\main.bmp" />
+    <None Include="res\MeshDeformation.ico" />
+    <None Include="res\MeshDeformation.rc2" />
+    <None Include="res\MeshDeformationDoc.ico" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\writelarge.bmp" />
+    <None Include="res\writesmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fillingHole\FillHole.h" />
+    <ClInclude Include="fillingHole\MeshDegeneratedTriangles.h" />
+    <ClInclude Include="fillingHole\MeshIsland.h" />
+    <ClInclude Include="fillingHole\MeshSpike.h" />
+    <ClInclude Include="fillingHole\PoissonDeform.h" />
+    <ClInclude Include="Hole.h" />
+    <ClInclude Include="MeshDeformation.h" />
+    <ClInclude Include="MeshDeformationDoc.h" />
+    <ClInclude Include="MeshDeform\Deformation.h" />
+    <ClInclude Include="MeshDeform\PoissonDeform\ControlVertex.h" />
+    <ClInclude Include="MeshDeform\PoissonDeform\PoissonDeformation.h" />
+    <ClInclude Include="MeshDisplay\MyTriMesh.h" />
+    <ClInclude Include="MeshPick\math3d.h" />
+    <ClInclude Include="MeshPick\MyMeshPick.h" />
+    <ClInclude Include="MeshPick\Selection.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UI\ArcBall.h" />
+    <ClInclude Include="UI\MainFrm.h" />
+    <ClInclude Include="UI\MeshDeformationView.h" />
+    <ClInclude Include="UI\MyArcBall.h" />
+    <ClInclude Include="UI\MyLeftPane.h" />
+    <ClInclude Include="UI\PoissonDefDlg.h" />
+    <ClInclude Include="UI\UIControl.h" />
+    <ClInclude Include="Utility\baseHeadFile.h" />
+    <ClInclude Include="Utility\ConstDef.h" />
+    <ClInclude Include="Utility\CP_PointVector.h" />
+    <ClInclude Include="Utility\MeshLaplacianSolver.h" />
+    <ClInclude Include="Utility\MyAfxFunction.h" />
+    <ClInclude Include="Utility\predefine.h" />
+    <ClInclude Include="Utility\quaternion.h" />
+    <ClInclude Include="Utility\SimpleCompute.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fillingHole\Hole.cpp" />
+    <ClCompile Include="fillingHole\MeshFillHole.cpp" />
+    <ClCompile Include="fillingHole\MeshDegeneratedTriangles.cpp" />
+    <ClCompile Include="fillingHole\MeshIsland.cpp" />
+    <ClCompile Include="fillingHole\MeshSpike.cpp" />
+    <ClCompile Include="fillingHole\PoissonDeform.cpp" />
+    <ClCompile Include="MeshDeformation.cpp" />
+    <ClCompile Include="MeshDeformationDoc.cpp" />
+    <ClCompile Include="MeshDeform\Deformation.cpp" />
+    <ClCompile Include="MeshDeform\PoissonDeform\ControlVertex.cpp" />
+    <ClCompile Include="MeshDeform\PoissonDeform\PoissonDeformation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MeshDisplay\MyTriMesh.cpp" />
+    <ClCompile Include="MeshPick\math3d.cpp" />
+    <ClCompile Include="MeshPick\MyMeshPick.cpp" />
+    <ClCompile Include="MeshPick\Selection.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UI\ArcBall.cpp" />
+    <ClCompile Include="UI\MainFrm.cpp" />
+    <ClCompile Include="UI\MeshDeformationView.cpp" />
+    <ClCompile Include="UI\MyArcBall.cpp" />
+    <ClCompile Include="UI\MyLeftPane.cpp" />
+    <ClCompile Include="UI\PoissonDefDlg.cpp" />
+    <ClCompile Include="UI\UIControl.cpp" />
+    <ClCompile Include="Utility\CP_PointVector.cpp" />
+    <ClCompile Include="Utility\MeshLaplacianSolver.cpp" />
+    <ClCompile Include="Utility\MyAfxFunction.cpp" />
+    <ClCompile Include="Utility\quaternion.cpp" />
+    <ClCompile Include="Utility\SimpleCompute.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MeshDeformation.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MeshDeformation.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

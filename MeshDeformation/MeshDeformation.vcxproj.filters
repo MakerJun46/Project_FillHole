@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\utility">
+      <UniqueIdentifier>{746a1e5a-94ee-4c70-8712-b4c48d53f080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI">
+      <UniqueIdentifier>{32f203f8-9e70-4938-987f-8f2fc93ae346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\deformation">
+      <UniqueIdentifier>{29fd7957-799c-4e99-98a0-e08ffe2ce680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\picking">
+      <UniqueIdentifier>{93c17015-0dd8-4bd8-8217-61ed3eb5599f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="header\utility">
+      <UniqueIdentifier>{9e31c136-c06e-4dba-b512-a0dadcde58fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\UI">
+      <UniqueIdentifier>{edf077b9-9452-4f19-8df8-1f31be32038d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\deformation">
+      <UniqueIdentifier>{336f238f-5222-4ead-a1d2-66cdd1980b24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\picking">
+      <UniqueIdentifier>{84e8d82b-e712-4ef9-8e46-53eeaff8994b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fillingHole">
+      <UniqueIdentifier>{1c3ee666-7237-4328-a57a-3594cc602c5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\FillingHole">
+      <UniqueIdentifier>{a4397efc-e784-4335-9c25-cc30a5ed2a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\buttons.bmp">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\filelarge.bmp">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\main.bmp">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\writelarge.bmp">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\writesmall.bmp">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\ribbon.mfcribbon-ms">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\MeshDeformation.rc2">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\MeshDeformationDoc.ico">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\MeshDeformation.ico">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>MFC</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>MFC</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MeshDeformation.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshPick\math3d.h">
+      <Filter>header\picking</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshPick\MyMeshPick.h">
+      <Filter>header\picking</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshPick\Selection.h">
+      <Filter>header\picking</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\baseHeadFile.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\CP_PointVector.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\predefine.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\quaternion.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\SimpleCompute.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\MainFrm.h">
+      <Filter>header\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\MeshDeformationView.h">
+      <Filter>header\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\MyLeftPane.h">
+      <Filter>header\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\PoissonDefDlg.h">
+      <Filter>header\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIControl.h">
+      <Filter>header\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshDeformationDoc.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\MyAfxFunction.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\MeshLaplacianSolver.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ArcBall.h">
+      <Filter>header\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\MyArcBall.h">
+      <Filter>header\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshDisplay\MyTriMesh.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshDeform\PoissonDeform\PoissonDeformation.h">
+      <Filter>header\deformation</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshDeform\Deformation.h">
+      <Filter>header\deformation</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshDeform\PoissonDeform\ControlVertex.h">
+      <Filter>header\deformation</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\ConstDef.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="fillingHole\PoissonDeform.h">
+      <Filter>header\FillingHole</Filter>
+    </ClInclude>
+    <ClInclude Include="fillingHole\MeshIsland.h">
+      <Filter>header\FillingHole</Filter>
+    </ClInclude>
+    <ClInclude Include="fillingHole\MeshDegeneratedTriangles.h">
+      <Filter>header\FillingHole</Filter>
+    </ClInclude>
+    <ClInclude Include="fillingHole\MeshSpike.h">
+      <Filter>header\FillingHole</Filter>
+    </ClInclude>
+    <ClInclude Include="fillingHole\FillHole.h">
+      <Filter>header\FillingHole</Filter>
+    </ClInclude>
+    <ClInclude Include="Hole.h">
+      <Filter>header\FillingHole</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MeshDeformation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshPick\math3d.cpp">
+      <Filter>src\picking</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshPick\MyMeshPick.cpp">
+      <Filter>src\picking</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshPick\Selection.cpp">
+      <Filter>src\picking</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\CP_PointVector.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\quaternion.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\SimpleCompute.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\MainFrm.cpp">
+      <Filter>src\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\MeshDeformationView.cpp">
+      <Filter>src\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\MyLeftPane.cpp">
+      <Filter>src\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\PoissonDefDlg.cpp">
+      <Filter>src\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIControl.cpp">
+      <Filter>src\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshDeformationDoc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\MyAfxFunction.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\MeshLaplacianSolver.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ArcBall.cpp">
+      <Filter>src\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\MyArcBall.cpp">
+      <Filter>src\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshDisplay\MyTriMesh.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshDeform\PoissonDeform\PoissonDeformation.cpp">
+      <Filter>src\deformation</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshDeform\Deformation.cpp">
+      <Filter>src\deformation</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshDeform\PoissonDeform\ControlVertex.cpp">
+      <Filter>src\deformation</Filter>
+    </ClCompile>
+    <ClCompile Include="fillingHole\PoissonDeform.cpp">
+      <Filter>src\fillingHole</Filter>
+    </ClCompile>
+    <ClCompile Include="fillingHole\MeshIsland.cpp">
+      <Filter>src\fillingHole</Filter>
+    </ClCompile>
+    <ClCompile Include="fillingHole\MeshDegeneratedTriangles.cpp">
+      <Filter>src\fillingHole</Filter>
+    </ClCompile>
+    <ClCompile Include="fillingHole\MeshSpike.cpp">
+      <Filter>src\fillingHole</Filter>
+    </ClCompile>
+    <ClCompile Include="fillingHole\MeshFillHole.cpp">
+      <Filter>src\fillingHole</Filter>
+    </ClCompile>
+    <ClCompile Include="fillingHole\Hole.cpp">
+      <Filter>src\fillingHole</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MeshDeformation.rc">
+      <Filter>MFC</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
